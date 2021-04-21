@@ -1,0 +1,8 @@
+@mixin my-ul-nostyle($margin){
+  list-style: none;
+  display: flex;
+  li{
+    margin:  $margin;
+    color: white;
+  }
+}

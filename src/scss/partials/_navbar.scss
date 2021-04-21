@@ -1,0 +1,19 @@
+nav{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  .left-nav{
+    width: 50%;
+    img{
+      margin: 20px;
+    }
+  }
+  .right-nav{
+    ul{
+      @include my-ul-nostyle(20px);
+      li{
+        cursor: pointer;
+      }
+    }
+  }
+}

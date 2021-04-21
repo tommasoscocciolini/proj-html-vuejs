@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .left-nav {
+  width: 50%;
+}
+nav .left-nav img {
+  margin: 20px;
+}
+nav .right-nav ul {
+  list-style: none;
+  display: flex;
+}
+nav .right-nav ul li {
+  margin: 20px;
+  color: white;
+}
+nav .right-nav ul li {
+  cursor: pointer;
+}
+
+header {
+  height: 600px;
+  background-color: blue;
+}

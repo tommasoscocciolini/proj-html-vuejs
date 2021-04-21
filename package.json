@@ -1,0 +1,33 @@
+{
+  "name": "proj-html-vuejs",
+  "version": "1.0.0",
+  "description": "html vuejs project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tommasoscocciolini/proj-html-vuejs.git"
+  },
+  "keywords": [
+    "corporate",
+    "landing",
+    "html",
+    "vuejs",
+    "scss"
+  ],
+  "author": "Tommaso Scocciolini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tommasoscocciolini/proj-html-vuejs/issues"
+  },
+  "homepage": "https://github.com/tommasoscocciolini/proj-html-vuejs#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.17",
+    "postcss": "^8.1.14",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.11",
+    "sass-loader": "^11.0.1"
+  }
+}
