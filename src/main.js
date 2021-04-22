@@ -2,7 +2,32 @@ var app = new Vue({
   el: '#root',
 
   data:{
-    navEl : ['Home', 'About', 'Services', 'Blog', 'Contact', 'Portfolio'],
+    navEl :[
+      {
+        name:'Home',
+        link: '',
+      },
+      {
+        name:'About',
+        link: '',
+      },
+      {
+        name:'Services',
+        link: '',
+      },
+      {
+        name:'Blog',
+        link: '',
+      },
+      {
+        name:'Contact',
+        link: '',
+      },
+      {
+        name:'Portfolio',
+        link: '',
+      },
+    ],
     latestWorks: [
     	{
     		name: 'Basket of Flower on table',
@@ -28,19 +53,23 @@ var app = new Vue({
     wwd: [
     	{
     		what: 'Data Analysis',
-    		desc: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper'
+    		desc: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper',
+        screen: './img/dataAnalysis.png',
     	},
     	{
     		what: 'SEO Optimization',
     		desc: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper',
+        screen: './img/seo-optimization.png',
     	},
     	{
     		what: 'Security Data',
         desc: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper',
+        screen: './img/securityData.png',
     	},
     	{
     		what: 'Branding Strategy',
         desc: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper',
+        screen: './img/brandingstrats.png',
     	},
     ]
 

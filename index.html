@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./dist/css/master.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <title>Proj htmlVuejs</title>
 </head>
 <body>
@@ -20,12 +20,83 @@
           </div>
           <div class="right-nav">
             <ul>
-              <li v-for="(el, i) in navEl">{{navEl[i]}}</li>
+              <li v-for="(el, i) in navEl">{{navEl[i].name}}</li>
             </ul>
+            <button class="btn-sign" type="button" name="button">Sign In</button>
           </div>
         </nav>
+        <div class="jumbo">
+          <div class="left-jumbo">
+            <div class="jumbo-txt">
+              <h1 class="title-text-bold">Business Planning</h1>
+              <h1 class="title-text-normal">Digital Technology</h1>
+              <h1 class="title-text-bold">Modern Solution !</h1>
+              <p class="my-4">When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface.</p>
+              <div class="btns">
+                <button type="button" name="button">Try it Now</button>
+                <button type="button" name="button">Explore More</button>
+              </div>
+            </div>
+          </div>
+          <div class="right-jumbo">
+            <div class="img-jumbo">
+              <img src="./img/header.png" alt="" height="500">
+            </div>
+          </div>
+        </div>
       </div>
     </header>
+    <main>
+      <div class="container">
+        <div class="titles">
+          <p class="text-red">Our Services</p>
+          <h1 class="title-text-normal my-1"><span class="title-text-bold">What</span> We Do</h1>
+          <p>When, while the lovely valley teems with vapour around me and the</p>
+        </div>
+        <div class="cards">
+          <div class="card" v-for="(card, i) in wwd">
+            <div class="img-cont">
+              <img :src="card.screen" alt="" width="100">
+            </div>
+            <div class="txt-cont">
+              <h2 class="my-1">{{card.what}}</h2>
+              <p>{{card.desc}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-cont my-4">
+          <button type="button" name="button">View All Services</button>
+        </div>
+
+
+
+      </div>
+      <div class="container100">
+        <div class="container">
+          <div class="jumbo">
+            <div class="left-jumbo">
+              <div class="img-jumbo">
+                <img src="./img/men-data.png" alt="" height="450" class="positioned-img">
+                <img src="./img/nemoodar.png" alt="" height="500">
+              </div>
+            </div>
+            <div class="right-jumbo">
+              <div class="jumbo-txt">
+                <span class="my-4">Start Your Project</span>
+                <h1 class="title-text-bold">Grow Your Business</h1>
+                <h1 class="title-text-normal">With Our Strategy</h1>
+                <p class="my-4">When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface.</p>
+                <div class="btns">
+                  <button type="button" name="button">Try it Now</button>
+                  <button type="button" name="button">Explore More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
 
 
   </div>

@@ -1,19 +1,26 @@
 nav{
-  height: 100px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  padding-top: 10px;
   .left-nav{
     width: 50%;
     img{
-      margin: 20px;
     }
   }
   .right-nav{
+    display: flex;
+    flex-wrap: nowrap;
     ul{
-      @include my-ul-nostyle(20px);
+      @include my-ul-nostyle(15px);
       li{
         cursor: pointer;
       }
+    }
+    button{
+      @include my-page-btn();
+      margin-left: 10px;
     }
   }
 }

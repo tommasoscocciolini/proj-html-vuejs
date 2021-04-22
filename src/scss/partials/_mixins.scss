@@ -6,3 +6,10 @@
     color: white;
   }
 }
+
+@mixin my-page-btn{
+  padding: 2px 10px;
+  border-radius: 15px;
+  color: #ffff;
+  background-color: cyan;
+}
