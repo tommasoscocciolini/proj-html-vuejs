@@ -1,7 +1,6 @@
 header{
   height: 700px;
-  background-color: blue;
-
+  @include background-grad-blue();
 
 .jumbo{
   display: flex;
@@ -17,9 +16,17 @@ header{
         padding: 5px;
         font-size: 3.3em;
       }
+      p{
+        color: $primary-txt-blue;
+      }
       .btns{
-        button{
-          @include my-page-btn();
+        button.btn-blue{
+          @include my-page-btn(10px, 20px);
+          @include btn-background-shad-blue();
+        }
+        button.btn-red{
+          @include my-page-btn(10px, 20px);
+          @include btn-background-shad-red();
         }
       }
     }

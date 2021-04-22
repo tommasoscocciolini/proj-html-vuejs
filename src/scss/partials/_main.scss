@@ -7,6 +7,9 @@ main{
       flex-direction: column;
       width: 100%;
       align-items: center;
+      p{
+        font-size: .9em;
+      }
     }
     .cards{
       padding-top: 100px;
@@ -28,7 +31,7 @@ main{
           p{
             text-align: center;
             font-size: .9em;
-            color: grey;
+            color: $text-grey;
           }
         }
 
@@ -38,15 +41,15 @@ main{
       width: 100%;
       display: flex;
       justify-content: center;
-      margin-top: 50px;
       button{
-      @include my-page-btn();
+      @include my-page-btn(10px, 20px);
+      @include btn-background-shad-red;
       }
     }
 
   }
   .container100{
-    background-color: blue;
+    @include background-grad-blue;
    .container{
       .jumbo{
         display: flex;
@@ -55,7 +58,7 @@ main{
         justify-content: space-between;
         align-items: center;
         .right-jumbo{
-          width: 60%;
+          width: 50%;
           .jumbo-txt{
             color: #ffff;
             span{
@@ -68,19 +71,23 @@ main{
             }
             .btns{
               button{
-                @include my-page-btn();
+                @include my-page-btn(10px, 20px);
+                @include btn-background-shad-blue;
+                &.btn-red{
+                  @include btn-background-shad-red;
+                }
               }
             }
           }
         }
         .left-jumbo{
-          width: 60%;
+          width: 50%;
           .img-jumbo{
             position: relative;
             img.positioned-img{
               position: absolute;
-              top: 50px;
-              left: 60px;
+              top: 60px;
+              left: 90px;
             }
           }
         }

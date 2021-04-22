@@ -16,10 +16,14 @@ nav{
       @include my-ul-nostyle(15px);
       li{
         cursor: pointer;
+        &:hover{
+          color: $txt-nav-hover;
+        }
       }
     }
     button{
-      @include my-page-btn();
+      @include my-page-btn(5px, 10px);
+      @include btn-background-shad-blue;
       margin-left: 10px;
     }
   }

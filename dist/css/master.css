@@ -16,7 +16,7 @@
 }
 
 .text-red {
-  color: red;
+  color: #f9636b;
 }
 
 .title-text-bold {
@@ -30,6 +30,11 @@
 .my-1 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.my-2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .my-4 {
@@ -62,17 +67,28 @@ nav .right-nav ul li {
 nav .right-nav ul li {
   cursor: pointer;
 }
+nav .right-nav ul li:hover {
+  color: #f9636b;
+}
 nav .right-nav button {
-  padding: 2px 10px;
+  padding: 5px 10px;
   border-radius: 15px;
   color: #ffff;
   background-color: cyan;
+  background: #3033bb;
+  background: linear-gradient(270deg, #3033bb 4%, #169caf 80%);
+  box-shadow: 0px 0px 8px #3033bb;
+  transition: all 0.3s ease 0s;
   margin-left: 10px;
+}
+nav .right-nav button:hover {
+  box-shadow: 0px 0px 16px #169caf;
 }
 
 header {
   height: 700px;
-  background-color: blue;
+  background: #040139;
+  background: linear-gradient(0deg, #040139 0%, #07075e 93%);
 }
 header .jumbo {
   display: flex;
@@ -91,11 +107,34 @@ header .jumbo .left-jumbo .jumbo-txt h1 {
   padding: 5px;
   font-size: 3.3em;
 }
-header .jumbo .left-jumbo .jumbo-txt .btns button {
-  padding: 2px 10px;
+header .jumbo .left-jumbo .jumbo-txt p {
+  color: #03a7d3e6;
+}
+header .jumbo .left-jumbo .jumbo-txt .btns button.btn-blue {
+  padding: 10px 20px;
   border-radius: 15px;
   color: #ffff;
   background-color: cyan;
+  background: #3033bb;
+  background: linear-gradient(270deg, #3033bb 4%, #169caf 80%);
+  box-shadow: 0px 0px 8px #3033bb;
+  transition: all 0.3s ease 0s;
+}
+header .jumbo .left-jumbo .jumbo-txt .btns button.btn-blue:hover {
+  box-shadow: 0px 0px 16px #169caf;
+}
+header .jumbo .left-jumbo .jumbo-txt .btns button.btn-red {
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: #ffff;
+  background-color: cyan;
+  background: #d06772;
+  background: linear-gradient(270deg, #d06772 0%, #87023f 100%);
+  box-shadow: 0px 0px 5px #d06772;
+  transition: all 0.3s ease 0s;
+}
+header .jumbo .left-jumbo .jumbo-txt .btns button.btn-red:hover {
+  box-shadow: 0px 0px 16px #87023f;
 }
 header .jumbo .right-jumbo {
   width: 60%;
@@ -116,6 +155,9 @@ main .container .titles {
   flex-direction: column;
   width: 100%;
   align-items: center;
+}
+main .container .titles p {
+  font-size: 0.9em;
 }
 main .container .cards {
   padding-top: 100px;
@@ -140,22 +182,29 @@ main .container .cards .card .txt-cont h2 {
 main .container .cards .card .txt-cont p {
   text-align: center;
   font-size: 0.9em;
-  color: grey;
+  color: #818A91;
 }
 main .container .btn-cont {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
 }
 main .container .btn-cont button {
-  padding: 2px 10px;
+  padding: 10px 20px;
   border-radius: 15px;
   color: #ffff;
   background-color: cyan;
+  background: #d06772;
+  background: linear-gradient(270deg, #d06772 0%, #87023f 100%);
+  box-shadow: 0px 0px 5px #d06772;
+  transition: all 0.3s ease 0s;
+}
+main .container .btn-cont button:hover {
+  box-shadow: 0px 0px 16px #87023f;
 }
 main .container100 {
-  background-color: blue;
+  background: #040139;
+  background: linear-gradient(0deg, #040139 0%, #07075e 93%);
 }
 main .container100 .container .jumbo {
   display: flex;
@@ -165,7 +214,7 @@ main .container100 .container .jumbo {
   align-items: center;
 }
 main .container100 .container .jumbo .right-jumbo {
-  width: 60%;
+  width: 50%;
 }
 main .container100 .container .jumbo .right-jumbo .jumbo-txt {
   color: #ffff;
@@ -179,19 +228,35 @@ main .container100 .container .jumbo .right-jumbo .jumbo-txt h1 {
   font-size: 3.3em;
 }
 main .container100 .container .jumbo .right-jumbo .jumbo-txt .btns button {
-  padding: 2px 10px;
+  padding: 10px 20px;
   border-radius: 15px;
   color: #ffff;
   background-color: cyan;
+  background: #3033bb;
+  background: linear-gradient(270deg, #3033bb 4%, #169caf 80%);
+  box-shadow: 0px 0px 8px #3033bb;
+  transition: all 0.3s ease 0s;
+}
+main .container100 .container .jumbo .right-jumbo .jumbo-txt .btns button:hover {
+  box-shadow: 0px 0px 16px #169caf;
+}
+main .container100 .container .jumbo .right-jumbo .jumbo-txt .btns button.btn-red {
+  background: #d06772;
+  background: linear-gradient(270deg, #d06772 0%, #87023f 100%);
+  box-shadow: 0px 0px 5px #d06772;
+  transition: all 0.3s ease 0s;
+}
+main .container100 .container .jumbo .right-jumbo .jumbo-txt .btns button.btn-red:hover {
+  box-shadow: 0px 0px 16px #87023f;
 }
 main .container100 .container .jumbo .left-jumbo {
-  width: 60%;
+  width: 50%;
 }
 main .container100 .container .jumbo .left-jumbo .img-jumbo {
   position: relative;
 }
 main .container100 .container .jumbo .left-jumbo .img-jumbo img.positioned-img {
   position: absolute;
-  top: 50px;
-  left: 60px;
+  top: 60px;
+  left: 90px;
 }
