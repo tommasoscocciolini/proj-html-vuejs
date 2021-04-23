@@ -21,11 +21,11 @@ header{
       }
       .btns{
         button.btn-blue{
-          @include my-page-btn(10px, 20px);
+          @include my-page-btn(10px, 35px);
           @include btn-background-shad-blue();
         }
         button.btn-red{
-          @include my-page-btn(10px, 20px);
+          @include my-page-btn(10px, 35px);
           @include btn-background-shad-red();
         }
       }

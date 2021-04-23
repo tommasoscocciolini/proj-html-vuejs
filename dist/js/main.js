@@ -31,19 +31,19 @@ var app = new Vue({
     }],
     latestWorks: [{
       name: 'Basket of Flower on table',
-      screen: '1',
+      screen: './img/latest1.jpg',
       type: 'Branding Strategy'
     }, {
       name: 'Purinky Products',
-      screen: '4',
+      screen: './img/latest4.jpg',
       type: 'Digital Experience'
     }, {
       name: 'Satisfy Poster',
-      screen: '3',
+      screen: './img/latest3.jpg',
       type: 'Branding Strategy'
     }, {
       name: 'Mock-up',
-      screen: '2',
+      screen: './img/latest2.jpg',
       type: 'Digital Experience'
     }],
     wwd: [{

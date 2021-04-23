@@ -1,0 +1,60 @@
+section.latest-works{
+  .container{
+    margin-bottom: 40px;
+  }
+  .carousel {
+  background: #EEE;
+  height: 380px;
+  padding: 20px 0;
+  .carousel-cell {
+    width: 30%;
+    height: 300px;
+    margin-right: 5px;
+    counter-increment: carousel-cell;
+    .img-cont{
+      width: 80%;
+      height: 300px;
+      margin: 0 auto;
+      box-shadow: 0px 8px 40px -8px rgba(0,0,0,0.43);
+      border-radius: 20px;
+      &:hover{
+        @include btn-background-shad-red;
+        .txt-cont{
+          color: #ffff;
+        }
+      }
+      img{
+        width: 100%;
+        height: auto;
+      }
+      .txt-cont{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 10px 0;
+        span.title-text-bold{
+          margin-left: 10px;
+        }
+        span.work-type{
+          margin-right: 10px;
+          font-size: .9em;
+          color: grey;
+        }
+      }
+    }
+  }
+  .carousel-cell:before {
+    // display: block;
+    // text-align: center;
+    // content: counter(carousel-cell);
+    // line-height: 200px;
+    // font-size: 80px;
+    // color: white;
+  }
+}
+
+
+
+/* cell number */
+
+}

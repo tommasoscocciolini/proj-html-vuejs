@@ -6,6 +6,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+ol.flickity-page-dots .dot.is-selected {
+  background-color: #f9636b;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -17,6 +21,10 @@
 
 .text-red {
   color: #f9636b;
+}
+
+.text-blue {
+  color: #F4F4F4;
 }
 
 .title-text-bold {
@@ -108,10 +116,10 @@ header .jumbo .left-jumbo .jumbo-txt h1 {
   font-size: 3.3em;
 }
 header .jumbo .left-jumbo .jumbo-txt p {
-  color: #03a7d3e6;
+  color: #F4F4F4;
 }
 header .jumbo .left-jumbo .jumbo-txt .btns button.btn-blue {
-  padding: 10px 20px;
+  padding: 10px 35px;
   border-radius: 15px;
   color: #ffff;
   background-color: cyan;
@@ -124,7 +132,7 @@ header .jumbo .left-jumbo .jumbo-txt .btns button.btn-blue:hover {
   box-shadow: 0px 0px 16px #169caf;
 }
 header .jumbo .left-jumbo .jumbo-txt .btns button.btn-red {
-  padding: 10px 20px;
+  padding: 10px 35px;
   border-radius: 15px;
   color: #ffff;
   background-color: cyan;
@@ -190,7 +198,7 @@ main .container .btn-cont {
   justify-content: center;
 }
 main .container .btn-cont button {
-  padding: 10px 20px;
+  padding: 10px 35px;
   border-radius: 15px;
   color: #ffff;
   background-color: cyan;
@@ -215,6 +223,8 @@ main .container100 .container .jumbo {
 }
 main .container100 .container .jumbo .right-jumbo {
   width: 50%;
+  font-size: 0.9em;
+  padding-left: 80px;
 }
 main .container100 .container .jumbo .right-jumbo .jumbo-txt {
   color: #ffff;
@@ -228,7 +238,7 @@ main .container100 .container .jumbo .right-jumbo .jumbo-txt h1 {
   font-size: 3.3em;
 }
 main .container100 .container .jumbo .right-jumbo .jumbo-txt .btns button {
-  padding: 10px 20px;
+  padding: 10px 35px;
   border-radius: 15px;
   color: #ffff;
   background-color: cyan;
@@ -259,4 +269,60 @@ main .container100 .container .jumbo .left-jumbo .img-jumbo img.positioned-img {
   position: absolute;
   top: 60px;
   left: 90px;
+}
+
+section.latest-works {
+  /* cell number */
+}
+section.latest-works .container {
+  margin-bottom: 40px;
+}
+section.latest-works .carousel {
+  background: #EEE;
+  height: 380px;
+  padding: 20px 0;
+}
+section.latest-works .carousel .carousel-cell {
+  width: 30%;
+  height: 300px;
+  margin-right: 5px;
+  counter-increment: carousel-cell;
+}
+section.latest-works .carousel .carousel-cell .img-cont {
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  box-shadow: 0px 8px 40px -8px rgba(0, 0, 0, 0.43);
+  border-radius: 20px;
+}
+section.latest-works .carousel .carousel-cell .img-cont:hover {
+  background: #d06772;
+  background: linear-gradient(270deg, #d06772 0%, #87023f 100%);
+  box-shadow: 0px 0px 5px #d06772;
+  transition: all 0.3s ease 0s;
+  box-shadow: none;
+}
+section.latest-works .carousel .carousel-cell .img-cont:hover:hover {
+  box-shadow: 0px 0px 16px #87023f;
+}
+section.latest-works .carousel .carousel-cell .img-cont:hover .txt-cont {
+  color: #ffff;
+}
+section.latest-works .carousel .carousel-cell .img-cont img {
+  width: 100%;
+  height: auto;
+}
+section.latest-works .carousel .carousel-cell .img-cont .txt-cont {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+section.latest-works .carousel .carousel-cell .img-cont .txt-cont span.title-text-bold {
+  margin-left: 10px;
+}
+section.latest-works .carousel .carousel-cell .img-cont .txt-cont span.work-type {
+  margin-right: 10px;
+  font-size: 0.9em;
+  color: grey;
 }

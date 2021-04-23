@@ -5,3 +5,7 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+ol.flickity-page-dots .dot.is-selected{
+  background-color: $txt-nav-hover;
+}

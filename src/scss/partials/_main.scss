@@ -42,7 +42,7 @@ main{
       display: flex;
       justify-content: center;
       button{
-      @include my-page-btn(10px, 20px);
+      @include my-page-btn(10px, 35px);
       @include btn-background-shad-red;
       }
     }
@@ -59,6 +59,8 @@ main{
         align-items: center;
         .right-jumbo{
           width: 50%;
+          font-size: .9em;
+          padding-left: 80px;
           .jumbo-txt{
             color: #ffff;
             span{
@@ -71,7 +73,7 @@ main{
             }
             .btns{
               button{
-                @include my-page-btn(10px, 20px);
+                @include my-page-btn(10px, 35px);
                 @include btn-background-shad-blue;
                 &.btn-red{
                   @include btn-background-shad-red;
