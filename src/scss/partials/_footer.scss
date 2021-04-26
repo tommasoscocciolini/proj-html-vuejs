@@ -30,6 +30,8 @@ section.subscribe-bar{
       height: 100%;
       border-radius: 20px;
       margin-left: 15px;
+      width: 100%;
+      outline: none;
     }
     button{
       @include my-page-btn(10px,35px);
