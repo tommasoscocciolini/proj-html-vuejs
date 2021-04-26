@@ -255,19 +255,13 @@
         <div class="list-footer-section footerPart">
           <h4 class="my-1">Quick Links</h4>
           <ul>
-            <li>Services</li>
-            <li>Contact</li>
-            <li>Blog</li>
+            <li v-for="(el, i) in footerLinks">{{el.name}}</li>
           </ul>
         </div>
         <div class="list-footer-section footerPart">
           <h4 class="my-1">Resources</h4>
           <ul>
-            <li>Art Design</li>
-            <li>Computer</li>
-            <li>IT News</li>
-            <li>Networking</li>
-            <li>Web Security</li>
+            <li v-for="(el, i) in footerResources">{{el.name}}</li>
           </ul>
         </div>
         <div class="contact-footer-section footerPart">

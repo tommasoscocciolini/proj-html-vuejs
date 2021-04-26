@@ -158,7 +158,43 @@ var app = new Vue({
       {
         logo: './img/clienty-3.png',
       },
-    ]
+    ],
+    footerLinks: [
+      {
+        name:'Services',
+        link: '',
+      },
+      {
+        name:'Contact',
+        link: '',
+      },
+      {
+        name:'Blog',
+        link: '',
+      },
+    ],
+    footerResources: [
+      {
+        name:'Art Design',
+        link: '',
+      },
+      {
+        name:'Computer',
+        link: '',
+      },
+      {
+        name:'IT News',
+        link: '',
+      },
+      {
+        name:'Networking',
+        link: '',
+      },
+      {
+        name:'Web Security',
+        link: '',
+      },
+    ],
   },
 
   methods:{
