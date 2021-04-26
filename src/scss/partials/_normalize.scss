@@ -9,3 +9,14 @@
 ol.flickity-page-dots .dot.is-selected{
   background-color: $txt-nav-hover;
 }
+
+.flickity-prev-next-button.next{
+  top: -15%;
+  color: $txt-nav-hover;
+}
+
+button.flickity-prev-next-button.previous{
+  top: -15%;
+  left: 95%;
+  color: $txt-nav-hover;
+}

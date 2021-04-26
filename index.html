@@ -9,10 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <title>Proj htmlVuejs</title>
 </head>
 <body>
   <div id="root">
+
     <header>
       <div class="container">
         <nav>
@@ -47,12 +49,14 @@
         </div>
       </div>
     </header>
+
     <main>
+
       <div class="container">
         <div class="titles">
           <p class="text-red">Our Services</p>
           <h1 class="title-text-normal my-1"><span class="title-text-bold">What</span> We Do</h1>
-          <p>When, while the lovely valley teems with vapour around me and the</p>
+          <p>When, while the lovely valley teems with vapour around me and strikes the</p>
         </div>
         <div class="cards">
           <div class="card" v-for="(card, i) in wwd">
@@ -68,9 +72,6 @@
         <div class="btn-cont my-4">
           <button type="button" name="button" class="my-4">View All Services</button>
         </div>
-
-
-
       </div>
       <div class="container100">
         <div class="container">
@@ -96,11 +97,12 @@
           </div>
         </div>
       </div>
+
       <section class="latest-works">
         <div class="container">
           <div class="left">
-            <p class="text-red">Portfolio</p>
-            <h1>latest Works</h1>
+            <p class="text-red my-1">Portfolio</p>
+            <h1 class="title-text-normal">latest<span class="title-text-bold"> Works</span></h1>
           </div>
           <div class="right">
           </div>
@@ -118,6 +120,119 @@
             </div>
 
           </div>
+        </div>
+      </section>
+
+      <section class="pricing">
+
+        <div class="container">
+          <div class="titles">
+            <p class="text-red">Price List</p>
+            <h1 class="title-text-normal my-1 text-white"><span class="title-text-bold text-white">Our</span> Pricing</h1>
+            <p class=" text-white">When, while the lovely valley teems with vapour around me and strikes the upper surface.</p>
+          </div>
+        </div>
+
+        <div class="container pricing-zone">
+          <div class="pricing-card" v-for="plan in plans">
+            <div class="type-pricing">
+              <h1 class="text-center title-usage">{{plan.name}}</h1>
+              <span class="subt text-center my-1">{{plan.subtitle}}</span>
+              <span class="value">$</span>
+              <div class="prices" style="margin: 0 auto;">
+                <span class="priceBig title-text-bold">{{plan.price}}</span>
+                <span class="price title-text-bold my-1 text-center">{{plan.price}}</span>
+              </div>
+              <span class="my-2 text-center text-small">Per Month</span>
+              <ul class="ul-pricing">
+                <li class="li-pricing" v-for="service in servicesPlans">
+                  <span class="title-text-bold">{{service.type}}</span>  <span>{{service.tx1}}</span>
+                </li>
+              </ul>
+              <button type="button" name="button" class="order-btn my-2">Order Now <i class="fas fa-long-arrow-alt-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="latest-posts">
+        <div class="container">
+          <div class="titles">
+            <p class="text-red">Blog</p>
+            <h1 class="title-text-normal my-1"><span class="title-text-bold">Latest</span> Posts</h1>
+            <p>When, while the lovely valley teems with vapour around me and strinkes the upper surface.</p>
+          </div>
+        </div>
+
+        <div class="container my-4">
+          <div class="main-post" style="background-image: url('./img/headway.jpg')">
+            <div class="post-text text-white">
+              <span class="date my-1">April 21, 2019 <span class="author">&#9679; by Paul</span> </span>
+              <h4 class="titlePost">Amazon gets CCI nod to aquire 49% stake in</h4>
+              <p class="my-1">When, while the lovely valley teems with vapour around me and the meridian sun s...</p>
+            </div>
+          </div>
+          <div class="sec-post">
+            <div class="small-post-text text-white">
+              <span class="date ">April 21, 2019 <span class="author">&#9679; by Paul</span> </span>
+              <h4 class="my-2 titlePost">Clearing Corporations get SEBI nod to invest in overnight funds</h4>
+              <p>When, while the lovely valley teems with vapour around me and the meridian sun s...</p>
+            </div>
+          </div>
+          <div class="sec-post">
+            <div class="small-post-text text-white">
+              <span class="date ">April 21, 2019 <span class="author">&#9679; by Paul</span> </span>
+              <h4 class="my-2 titlePost">Shabnam Dhillon, wife of RSSB chief Gurinder Dhillon, passes away in London</h4>
+              <p>When, while the lovely valley teems with vapour around me and the meridian sun s...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial">
+        <div class="container">
+          <div class="titles">
+            <p class="text-red">Testimonial</p>
+            <h1 class="title-text-normal my-1"><span class="title-text-bold">What</span> People Say</h1>
+            <p class="text-center">When, while the lovely valley teems with vapour around me and strinkes the upper surface.</p>
+          </div>
+        </div>
+
+        <div class="container testimonial-group">
+          <div class="testimonial-card my-2" v-for="ppl in testimonials">
+            <div class="img-id">
+              <img :src="ppl.iconPath" alt="">
+            </div>
+            <div class="stars my-4">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="far fa-star"></i><i class="far fa-star"></i>
+            </div>
+            <p class="text-center testimonial-msg">{{ppl.text}}</p>
+            <h3 class="text-center my-2 text-small">{{ppl.name}}</h3>
+            <p class="testimonial-role text-center text-small">{{ppl.role}}</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sponsors my-4">
+        <div class="container">
+          <ul class="logo-list">
+            <li v-for="sponsor in sponsors">
+              <img :src="sponsor.logo" alt="" width="110">
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="subscribe-bar">
+        <div class="text-subscribe">
+          <h1 class="text-big">We Offer Awesome Services</h1>
+          <p class="my-1 text-small">When, while the lovely valley teems with vapour around me and the meridian sun strikes.</p>
+        </div>
+        <div class="email-box">
+          <input type="text" name="" value="" placeholder="Enter You Email Address">
+          <button type="button" name="button">Subscribe</button>
         </div>
       </section>
 

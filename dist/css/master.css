@@ -10,6 +10,17 @@ ol.flickity-page-dots .dot.is-selected {
   background-color: #f9636b;
 }
 
+.flickity-prev-next-button.next {
+  top: -15%;
+  color: #f9636b;
+}
+
+button.flickity-prev-next-button.previous {
+  top: -15%;
+  left: 95%;
+  color: #f9636b;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -19,12 +30,28 @@ ol.flickity-page-dots .dot.is-selected {
   width: 100%;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-small {
+  font-size: 0.8em;
+}
+
+.text-big {
+  font-size: 2.5em;
+}
+
 .text-red {
   color: #f9636b;
 }
 
 .text-blue {
   color: #F4F4F4;
+}
+
+.text-white {
+  color: white;
 }
 
 .title-text-bold {
@@ -48,6 +75,10 @@ ol.flickity-page-dots .dot.is-selected {
 .my-4 {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.titlePost {
+  font-size: 1.2em;
 }
 
 nav {
@@ -80,7 +111,7 @@ nav .right-nav ul li:hover {
 }
 nav .right-nav button {
   padding: 5px 10px;
-  border-radius: 15px;
+  border-radius: 20px;
   color: #ffff;
   background-color: cyan;
   background: #3033bb;
@@ -120,7 +151,7 @@ header .jumbo .left-jumbo .jumbo-txt p {
 }
 header .jumbo .left-jumbo .jumbo-txt .btns button.btn-blue {
   padding: 10px 35px;
-  border-radius: 15px;
+  border-radius: 20px;
   color: #ffff;
   background-color: cyan;
   background: #3033bb;
@@ -133,7 +164,7 @@ header .jumbo .left-jumbo .jumbo-txt .btns button.btn-blue:hover {
 }
 header .jumbo .left-jumbo .jumbo-txt .btns button.btn-red {
   padding: 10px 35px;
-  border-radius: 15px;
+  border-radius: 20px;
   color: #ffff;
   background-color: cyan;
   background: #d06772;
@@ -199,7 +230,7 @@ main .container .btn-cont {
 }
 main .container .btn-cont button {
   padding: 10px 35px;
-  border-radius: 15px;
+  border-radius: 20px;
   color: #ffff;
   background-color: cyan;
   background: #d06772;
@@ -239,7 +270,7 @@ main .container100 .container .jumbo .right-jumbo .jumbo-txt h1 {
 }
 main .container100 .container .jumbo .right-jumbo .jumbo-txt .btns button {
   padding: 10px 35px;
-  border-radius: 15px;
+  border-radius: 20px;
   color: #ffff;
   background-color: cyan;
   background: #3033bb;
@@ -279,7 +310,7 @@ section.latest-works .container {
 }
 section.latest-works .carousel {
   background: #EEE;
-  height: 380px;
+  height: 400px;
   padding: 20px 0;
 }
 section.latest-works .carousel .carousel-cell {
@@ -300,7 +331,6 @@ section.latest-works .carousel .carousel-cell .img-cont:hover {
   background: linear-gradient(270deg, #d06772 0%, #87023f 100%);
   box-shadow: 0px 0px 5px #d06772;
   transition: all 0.3s ease 0s;
-  box-shadow: none;
 }
 section.latest-works .carousel .carousel-cell .img-cont:hover:hover {
   box-shadow: 0px 0px 16px #87023f;
@@ -309,8 +339,10 @@ section.latest-works .carousel .carousel-cell .img-cont:hover .txt-cont {
   color: #ffff;
 }
 section.latest-works .carousel .carousel-cell .img-cont img {
-  width: 100%;
-  height: auto;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 250px;
+  max-height: 250px;
 }
 section.latest-works .carousel .carousel-cell .img-cont .txt-cont {
   display: flex;
@@ -325,4 +357,242 @@ section.latest-works .carousel .carousel-cell .img-cont .txt-cont span.work-type
   margin-right: 10px;
   font-size: 0.9em;
   color: grey;
+}
+section.pricing {
+  height: 500px;
+  width: 100%;
+  background: #040139;
+  background: linear-gradient(0deg, #040139 0%, #07075e 93%);
+  margin-top: 50px;
+}
+section.pricing .container.pricing-zone {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+section.pricing .container.pricing-zone .pricing-card {
+  margin-top: 30px;
+  height: 500px;
+  width: 30%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffff;
+  padding: 20px;
+  box-shadow: 0px 8px 40px -8px rgba(0, 0, 0, 0.43);
+}
+section.pricing .container.pricing-zone .pricing-card .type-pricing {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+section.pricing .container.pricing-zone .pricing-card .type-pricing .title-usage {
+  font-size: 2em;
+}
+section.pricing .container.pricing-zone .pricing-card .type-pricing .subt {
+  margin-bottom: 20px;
+}
+section.pricing .container.pricing-zone .pricing-card .type-pricing .prices {
+  position: relative;
+}
+section.pricing .container.pricing-zone .pricing-card .type-pricing .prices .price {
+  font-size: 5em;
+}
+section.pricing .container.pricing-zone .pricing-card .type-pricing .prices .priceBig {
+  position: absolute;
+  top: -150%;
+  left: 15%;
+  font-size: 12em;
+  opacity: 0.2;
+}
+section.pricing .container.pricing-zone .pricing-card .type-pricing .value {
+  margin-bottom: -10px;
+}
+section.pricing .container.pricing-zone .pricing-card .type-pricing .ul-pricing {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.pricing .container.pricing-zone .pricing-card .type-pricing .ul-pricing .li-pricing {
+  margin: 5px 0;
+}
+section.pricing .container.pricing-zone .pricing-card .type-pricing .order-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 35px;
+  border-radius: 20px;
+  color: #ffff;
+  background-color: cyan;
+  background: #d06772;
+  background: linear-gradient(270deg, #d06772 0%, #87023f 100%);
+  box-shadow: 0px 0px 5px #d06772;
+  transition: all 0.3s ease 0s;
+}
+section.pricing .container.pricing-zone .pricing-card .type-pricing .order-btn:hover {
+  box-shadow: 0px 0px 16px #87023f;
+}
+section.pricing .container.pricing-zone .pricing-card .type-pricing .order-btn:hover {
+  color: #ffff;
+}
+section.pricing .container.pricing-zone .pricing-card:hover {
+  background: #d06772;
+  background: linear-gradient(270deg, #d06772 0%, #87023f 100%);
+  box-shadow: 0px 0px 5px #d06772;
+  transition: all 0.3s ease 0s;
+  color: #ffff;
+}
+section.pricing .container.pricing-zone .pricing-card:hover:hover {
+  box-shadow: 0px 0px 16px #87023f;
+}
+
+section.latest-posts {
+  padding-top: 250px;
+}
+section.latest-posts .container {
+  display: flex;
+  justify-content: space-around;
+}
+section.latest-posts .container .main-post {
+  width: 50%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  filter: brightness(0.9);
+}
+section.latest-posts .container .main-post .post-text {
+  font-size: 0.9em;
+  display: flex;
+  height: 100%;
+  width: 60%;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+section.latest-posts .container .main-post .post-text .date {
+  font-size: 0.9em;
+}
+section.latest-posts .container .main-post .post-text .author {
+  font-size: 0.8em;
+}
+section.latest-posts .container .sec-post {
+  height: 300px;
+  width: 20%;
+  background: #040139;
+  background: linear-gradient(0deg, #040139 0%, #07075e 93%);
+  border-radius: 20px;
+}
+section.latest-posts .container .sec-post .small-post-text {
+  font-size: 0.9em;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 10px 30px;
+  flex-direction: column;
+  justify-content: center;
+}
+section.latest-posts .container .sec-post .small-post-text .date {
+  font-size: 0.9em;
+}
+section.latest-posts .container .sec-post .small-post-text .author {
+  font-size: 0.8em;
+}
+
+section.testimonial .testimonial-group {
+  display: flex;
+  flex-wrap: nowrap;
+}
+section.testimonial .testimonial-group .testimonial-card {
+  width: calc(100%/3);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+section.testimonial .testimonial-group .testimonial-card .img-id {
+  display: flex;
+  justify-content: center;
+}
+section.testimonial .testimonial-group .testimonial-card .img-id img {
+  width: 100px;
+  border: 5px solid #f9636b;
+  border-radius: 50%;
+}
+section.testimonial .testimonial-group .testimonial-card .stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.testimonial .testimonial-group .testimonial-card .stars i {
+  color: #f9636b;
+}
+section.testimonial .testimonial-group .testimonial-card .testimonial-msg {
+  width: 70%;
+  margin: 0 auto;
+}
+
+section.sponsors {
+  margin-top: 150px;
+}
+section.sponsors .container .logo-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section.subscribe-bar {
+  height: 200px;
+  background: #d06772;
+  background: linear-gradient(270deg, #d06772 0%, #87023f 100%);
+  box-shadow: 0px 0px 5px #d06772;
+  transition: all 0.3s ease 0s;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffff;
+}
+section.subscribe-bar:hover {
+  box-shadow: 0px 0px 16px #87023f;
+}
+section.subscribe-bar .text-subscribe {
+  width: 60%;
+}
+section.subscribe-bar .email-box {
+  height: 25%;
+  width: 30%;
+  border-radius: 20px;
+  background-color: #ffff;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+section.subscribe-bar .email-box input {
+  height: 100%;
+  border-radius: 20px;
+  margin-left: 15px;
+}
+section.subscribe-bar .email-box button {
+  padding: 10px 35px;
+  border-radius: 20px;
+  color: #ffff;
+  background-color: cyan;
+  background: #3033bb;
+  background: linear-gradient(270deg, #3033bb 4%, #169caf 80%);
+  box-shadow: 0px 0px 8px #3033bb;
+  transition: all 0.3s ease 0s;
+  height: 80%;
+  align-self: center;
+  margin-right: 5px;
+}
+section.subscribe-bar .email-box button:hover {
+  box-shadow: 0px 0px 16px #169caf;
 }

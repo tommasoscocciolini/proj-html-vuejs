@@ -62,6 +62,73 @@ var app = new Vue({
       what: 'Branding Strategy',
       desc: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper',
       screen: './img/brandingstrats.png'
+    }],
+    plans: [{
+      name: 'Designing',
+      subtitle: 'Process',
+      price: 40
+    }, {
+      name: 'Developing',
+      subtitle: 'Product',
+      price: 60
+    }, {
+      name: 'Supporting',
+      subtitle: 'Clients',
+      price: 80
+    }],
+    servicesPlans: [{
+      type: 'Creative',
+      tx1: 'Design Enabled'
+    }, {
+      type: 'Vibrant',
+      tx1: 'Color Usage'
+    }, {
+      type: 'Eye',
+      tx1: 'Catching Design'
+    }, {
+      type: 'Extreme',
+      tx1: 'Typography'
+    }, {
+      type: 'Exceptional',
+      tx1: 'Design'
+    }],
+    // posts: [
+    //   {
+    //     date: 'April 21, 2019',
+    //     contact: 'Alex',
+    //     title: 'Amazon gets CCI nod to aquire 49% stake in',
+    //     text: 'When, while the lovely valley teems with vapour around me and the meridian sun s...'
+    //   },
+    // ]
+    testimonials: [{
+      iconPath: './img/id1.png',
+      rate: 3,
+      text: 'When, while the lovely valley teems with vapour around me and the meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand',
+      name: 'Michkel Anegl',
+      role: 'Marketing Management'
+    }, {
+      iconPath: './img/id2.png',
+      rate: 3,
+      text: 'When, while the lovely valley teems with vapour around me and the meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand',
+      name: 'Michkel Anegl',
+      role: 'Marketing Management'
+    }, {
+      iconPath: './img/id3.png',
+      rate: 3,
+      text: 'When, while the lovely valley teems with vapour around me and the meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand',
+      name: 'Michkel Anegl',
+      role: 'Marketing Management'
+    }],
+    sponsors: [{
+      logo: './img/client-1-1.png'
+    }, {
+      logo: './img/clienty-2.png'
+    }, {
+      logo: './img/clienty-4.png'
+    }, {
+      logo: './img/client-5.png'
+    }, {
+      logo: './img/clienty-3.png'
     }]
   },
   methods: {

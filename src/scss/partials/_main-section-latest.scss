@@ -4,7 +4,7 @@ section.latest-works{
   }
   .carousel {
   background: #EEE;
-  height: 380px;
+  height: 400px;
   padding: 20px 0;
   .carousel-cell {
     width: 30%;
@@ -24,8 +24,10 @@ section.latest-works{
         }
       }
       img{
-        width: 100%;
-        height: auto;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 250px;
+        max-height: 250px;
       }
       .txt-cont{
         display: flex;
