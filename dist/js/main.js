@@ -10,6 +10,9 @@
 var app = new Vue({
   el: '#root',
   data: {
+    address: 'Patricia C. Amedee 4401 Wadeck <br> Street Grapevine Nashville, Tx 76051',
+    phone: '+99 (0) 101 0000 888',
+    email: 'info@yourdomain.com',
     navEl: [{
       name: 'Home',
       link: ''
@@ -155,6 +158,11 @@ var app = new Vue({
     }, {
       name: 'Web Security',
       link: ''
+    }],
+    contacts: [{
+      address: 'Patricia C. Amedee 4401 Wadeck <br> Street Grapevine Nashville, Tx 76051',
+      phone: '+99 (0) 101 0000 888',
+      email: 'info@yourdomain.com'
     }]
   },
   methods: {
