@@ -54,6 +54,10 @@ button.flickity-prev-next-button.previous {
   color: white;
 }
 
+.text-grey {
+  color: #aaaaaa;
+}
+
 .title-text-bold {
   font-weight: bold;
 }
@@ -79,6 +83,17 @@ button.flickity-prev-next-button.previous {
 
 .titlePost {
   font-size: 1.2em;
+}
+
+.fa-comment {
+  position: fixed;
+  top: 95%;
+  right: 25px;
+  font-size: 0.8em;
+  border-radius: 50%;
+  padding: 13px;
+  color: #ffff;
+  background-color: #527CEB;
 }
 
 nav {
@@ -210,10 +225,21 @@ main .container .cards .card {
   align-items: center;
 }
 main .container .cards .card .img-cont {
-  height: 150px;
+  height: 110px;
+  z-index: 12;
+  border-radius: 20pX;
 }
 main .container .cards .card .txt-cont {
   width: 70%;
+  padding: 20px;
+  padding-top: 100px;
+  margin-top: -100px;
+  border-radius: 20px;
+}
+main .container .cards .card .txt-cont:hover {
+  color: #ffff;
+  background: #040139;
+  background: linear-gradient(0deg, #040139 0%, #07075e 93%);
 }
 main .container .cards .card .txt-cont h2 {
   text-align: center;
@@ -320,7 +346,7 @@ section.latest-works .carousel .carousel-cell {
   counter-increment: carousel-cell;
 }
 section.latest-works .carousel .carousel-cell .img-cont {
-  width: 80%;
+  width: 343px;
   height: 300px;
   margin: 0 auto;
   box-shadow: 0px 8px 40px -8px rgba(0, 0, 0, 0.43);
@@ -339,8 +365,6 @@ section.latest-works .carousel .carousel-cell .img-cont:hover .txt-cont {
   color: #ffff;
 }
 section.latest-works .carousel .carousel-cell .img-cont img {
-  min-width: 100%;
-  max-width: 100%;
   min-height: 250px;
   max-height: 250px;
 }
@@ -462,6 +486,8 @@ section.latest-posts .container .main-post {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
+  display: flex;
+  flex-wrap: nowrap;
   filter: brightness(0.9);
 }
 section.latest-posts .container .main-post .post-text {
@@ -479,18 +505,32 @@ section.latest-posts .container .main-post .post-text .date {
 section.latest-posts .container .main-post .post-text .author {
   font-size: 0.8em;
 }
+section.latest-posts .container .main-post .btn-more {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+section.latest-posts .container .main-post .btn-more button {
+  padding: 10px 35px;
+  border-radius: 20px;
+  color: #ffff;
+  background-color: cyan;
+  margin-right: 50px;
+  margin-bottom: 40px;
+  background-color: #ffff;
+  color: black;
+}
 section.latest-posts .container .sec-post {
-  height: 300px;
   width: 20%;
-  background: #040139;
-  background: linear-gradient(0deg, #040139 0%, #07075e 93%);
+  background: #0a2454;
+  background: linear-gradient(300deg, #0a2454 9%, #100f3e 62%);
   border-radius: 20px;
 }
 section.latest-posts .container .sec-post .small-post-text {
   font-size: 0.9em;
   display: flex;
   height: 100%;
-  width: 100%;
   padding: 10px 30px;
   flex-direction: column;
   justify-content: center;
@@ -500,6 +540,17 @@ section.latest-posts .container .sec-post .small-post-text .date {
 }
 section.latest-posts .container .sec-post .small-post-text .author {
   font-size: 0.8em;
+}
+section.latest-posts .container .sec-post .small-post-text button.read-more-btn {
+  padding: 10px 35px;
+  border-radius: 20px;
+  color: #ffff;
+  background-color: cyan;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: #ffff;
+  color: black;
+  align-self: flex-end;
 }
 
 section.testimonial .testimonial-group {
@@ -525,9 +576,20 @@ section.testimonial .testimonial-group .testimonial-card .stars {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-section.testimonial .testimonial-group .testimonial-card .stars i {
+section.testimonial .testimonial-group .testimonial-card .stars i.fa-star {
   color: #f9636b;
+}
+section.testimonial .testimonial-group .testimonial-card .stars i.fa-quote-right {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.7;
+  font-size: 3.5em;
+  z-index: -1;
+  color: lightgrey;
 }
 section.testimonial .testimonial-group .testimonial-card .testimonial-msg {
   width: 70%;
@@ -545,6 +607,9 @@ section.sponsors .container .logo-list {
 }
 
 section.subscribe-bar {
+  position: relative;
+  top: -25%;
+  left: 0;
   height: 200px;
   background: #d06772;
   background: linear-gradient(270deg, #d06772 0%, #87023f 100%);
@@ -554,6 +619,7 @@ section.subscribe-bar {
   margin: 0 auto;
   border-radius: 20px;
   margin-top: 120px;
+  z-index: 100;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -595,4 +661,58 @@ section.subscribe-bar .email-box button {
 }
 section.subscribe-bar .email-box button:hover {
   box-shadow: 0px 0px 16px #169caf;
+}
+
+footer {
+  position: relative;
+  height: 500px;
+  margin-top: 250px;
+  background: #040139;
+  background: linear-gradient(0deg, #040139 0%, #07075e 93%);
+  color: #ffff;
+}
+footer .footer-text {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-text .footerPart {
+  width: calc(100%/4);
+}
+footer .footer-text .footerPart ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-text .footerPart ul li {
+  margin: 5px;
+  color: white;
+}
+footer .footer-text .footerPart ul li {
+  color: #AAAAAA;
+}
+footer .footer-end-bar {
+  margin-top: 56px;
+  height: 60px;
+  border-top: 1px solid #527CEB;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+footer .footer-end-bar ul {
+  list-style: none;
+  display: flex;
+}
+footer .footer-end-bar ul li {
+  margin: 15px;
+  color: white;
+}
+footer .footer-end-bar .fa-arrow-up {
+  position: absolute;
+  top: -20px;
+  right: 75px;
+  border-radius: 50%;
+  padding: 15px;
+  color: black;
+  background-color: #ffff;
 }

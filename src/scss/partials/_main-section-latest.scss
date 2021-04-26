@@ -12,7 +12,7 @@ section.latest-works{
     margin-right: 5px;
     counter-increment: carousel-cell;
     .img-cont{
-      width: 80%;
+      width: 343px;
       height: 300px;
       margin: 0 auto;
       box-shadow: 0px 8px 40px -8px rgba(0,0,0,0.43);
@@ -24,8 +24,8 @@ section.latest-works{
         }
       }
       img{
-        min-width: 100%;
-        max-width: 100%;
+        //min-width: 100%;
+        //max-width: 100%;
         min-height: 250px;
         max-height: 250px;
       }

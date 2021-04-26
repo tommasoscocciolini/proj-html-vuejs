@@ -10,6 +10,9 @@ section.latest-posts{
       background-repeat: no-repeat;
       background-size: cover;
       border-radius: 20px;
+
+      display: flex;
+      flex-wrap: nowrap;
       filter: brightness(.9);
       .post-text{
         font-size: .9em;
@@ -25,19 +28,31 @@ section.latest-posts{
         .author{
           font-size: .8em;
         }
-
+      }
+      .btn-more{
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        button{
+          @include my-page-btn(10px, 35px);
+          margin-right: 50px;
+          margin-bottom: 40px;
+          background-color: #ffff;
+          color: black;
+        }
       }
     }
     .sec-post{
-      height: 300px;
+      //height: 300px;
       width: 20%;
-      @include background-grad-blue;
+      @include background-grad-blue-light;
       border-radius: 20px;
       .small-post-text{
         font-size: .9em;
         display: flex;
         height: 100%;
-        width: 100%;
+        // width: 80%;
         padding: 10px 30px;
         flex-direction: column;
         justify-content: center;
@@ -46,6 +61,14 @@ section.latest-posts{
         }
         .author{
           font-size: .8em;
+        }
+        button.read-more-btn{
+          @include my-page-btn(10px, 35px);
+          margin-top: 30px;
+          margin-bottom: 20px;
+          background-color: #ffff;
+          color: black;
+          align-self: flex-end;
         }
       }
     }

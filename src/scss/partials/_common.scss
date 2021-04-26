@@ -31,6 +31,10 @@
   color: white;
 }
 
+.text-grey{
+  color: #aaaaaa;
+}
+
 .title-text-bold{
   font-weight: bold;
 }
@@ -56,4 +60,15 @@
 
 .titlePost{
   font-size: 1.2em;
+}
+
+.fa-comment{
+  position: fixed;
+  top: 95%;
+  right: 25px;
+  font-size: .8em;
+  border-radius: 50%;
+  padding: 13px;
+  color: #ffff;
+  background-color: $primary-bg-blue;
 }

@@ -52,7 +52,7 @@
 
     <main>
 
-      <div class="container">
+      <div class="container cards-section">
         <div class="titles">
           <p class="text-red">Our Services</p>
           <h1 class="title-text-normal my-1"><span class="title-text-bold">What</span> We Do</h1>
@@ -102,7 +102,7 @@
         <div class="container">
           <div class="left">
             <p class="text-red my-1">Portfolio</p>
-            <h1 class="title-text-normal">latest<span class="title-text-bold"> Works</span></h1>
+            <h1 class="title-text-bold">latest<span class="title-text-normal"> Work</span></h1>
           </div>
           <div class="right">
           </div>
@@ -171,20 +171,26 @@
               <span class="date my-1">April 21, 2019 <span class="author">&#9679; by Paul</span> </span>
               <h4 class="titlePost">Amazon gets CCI nod to aquire 49% stake in</h4>
               <p class="my-1">When, while the lovely valley teems with vapour around me and the meridian sun s...</p>
+
+            </div>
+            <div class="btn-more">
+              <button type="button" name="button">Read More</button>
             </div>
           </div>
           <div class="sec-post">
             <div class="small-post-text text-white">
               <span class="date ">April 21, 2019 <span class="author">&#9679; by Paul</span> </span>
-              <h4 class="my-2 titlePost">Clearing Corporations get SEBI nod to invest in overnight funds</h4>
-              <p>When, while the lovely valley teems with vapour around me and the meridian sun s...</p>
+              <h4 class="my-2 titlePost" style="margin-bottom: 35px;">Clearing Corporations get SEBI nod to invest in overnight funds</h4>
+              <p class="text-grey">When, while the lovely valley teems with vapour around me and the meridian sun s...</p>
+              <button type="button" name="button" class="read-more-btn">Read More</button>
             </div>
           </div>
           <div class="sec-post">
             <div class="small-post-text text-white">
               <span class="date ">April 21, 2019 <span class="author">&#9679; by Paul</span> </span>
               <h4 class="my-2 titlePost">Shabnam Dhillon, wife of RSSB chief Gurinder Dhillon, passes away in London</h4>
-              <p>When, while the lovely valley teems with vapour around me and the meridian sun s...</p>
+              <p class="text-grey">When, while the lovely valley teems with vapour around me and the meridian sun s...</p>
+              <button type="button" name="button" class="read-more-btn">Read More</button>
             </div>
           </div>
         </div>
@@ -205,6 +211,7 @@
               <img :src="ppl.iconPath" alt="">
             </div>
             <div class="stars my-4">
+              <i class="fas fa-quote-right bg-quote"></i>
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
               <i class="far fa-star"></i><i class="far fa-star"></i>
             </div>
@@ -225,20 +232,65 @@
         </div>
       </section>
 
+
+
+    </main>
+    <footer>
       <section class="subscribe-bar">
         <div class="text-subscribe">
           <h1 class="text-big">We Offer Awesome Services</h1>
           <p class="my-1 text-small">When, while the lovely valley teems with vapour around me and the meridian sun strikes.</p>
         </div>
         <div class="email-box">
-          <input type="text" name="" value="" placeholder="Enter You Email Address">
+          <input type="text" name="email" value="" placeholder="Enter You Email Address">
           <button type="button" name="button">Subscribe</button>
         </div>
       </section>
 
-    </main>
+      <div class="container footer-text">
+        <div class="logo-footer-section footerPart">
+          <img src="./img/white-logo-2.png" alt="" width="130">
+          <p class="my-2 text-white text-small text-grey" style="width: 80%;">When, while the lovely valley teems with vapour around me and the meridian sun strikes the upper impenetrable</p>
+        </div>
+        <div class="list-footer-section footerPart">
+          <h4 class="my-1">Quick Links</h4>
+          <ul>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div class="list-footer-section footerPart">
+          <h4 class="my-1">Resources</h4>
+          <ul>
+            <li>Art Design</li>
+            <li>Computer</li>
+            <li>IT News</li>
+            <li>Networking</li>
+            <li>Web Security</li>
+          </ul>
+        </div>
+        <div class="contact-footer-section footerPart">
+          <h4 class="my-1">Contact Us</h4>
+          <p class="my-2 text-grey"><span class="title-text-bold text-white">Address:</span> Patricia C. Amedee 4401 Wadeck <br> Street Grapevine Nashville, Tx 76051</p>
+          <p class="my-1 text-grey"><span class="title-text-bold text-white">Phone:</span> +99 (0) 101 0000 888</p>
+          <p class="text-grey"><span class="title-text-bold text-white">Email:</span> info@yourdomain.com</p>
+        </div>
+      </div>
+      <div class="footer-end-bar">
+        <p class="text-small"> 2020 Phlox. All right Reserved.</p>
+        <ul>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-linkedin"></i></li>
+          <li><i class="fab fa-facebook"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+        </ul>
+        <i class="fas fa-arrow-up"></i>
 
+      </div>
+    </footer>
 
+    <i class="far fa-comment"></i>
   </div>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>

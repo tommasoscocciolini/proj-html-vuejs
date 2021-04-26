@@ -19,6 +19,11 @@
   background: linear-gradient(0deg, rgba(4,1,57,1) 0%, rgba(7,7,94,1) 93%);
 }
 
+@mixin background-grad-blue-light{
+  background: rgb(10,36,84);
+  background: linear-gradient(300deg, rgba(10,36,84,1) 9%, rgba(16,15,62,1) 62%);
+}
+
 @mixin btn-background-shad-blue{
   background: rgb(48,51,187);
   background: linear-gradient(270deg, rgba(48,51,187,1) 4%, rgba(22,156,175,1) 80%);

@@ -22,8 +22,19 @@ section.testimonial{
         display: flex;
         justify-content: center;
         align-items: center;
-        i{
+        position: relative;
+        i.fa-star{
           color: $txt-nav-hover;
+        }
+        i.fa-quote-right{
+          position: absolute;
+          top: 30%;
+          left: 50%;
+          transform: translate(-50%, 0);
+          opacity: .7;
+          font-size: 3.5em;
+          z-index: -1;
+          color: lightgrey;
         }
       }
 
